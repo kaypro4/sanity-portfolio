@@ -21,6 +21,7 @@ const Header = ({onHideNav, onShowNav, showNav, siteTitle}) => (
           <li hidden>
             <Link to='/projects/'>All Projects</Link>
           </li>
+          <li><a href="https://cv.clinecollett.com" target="_blank">Resume &rarr;</a></li>
         </ul>
       </nav>
     </div>
