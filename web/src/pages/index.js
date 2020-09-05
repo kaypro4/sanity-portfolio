@@ -91,9 +91,9 @@ const IndexPage = props => {
         <p>{site.subtitle}</p>
         {projectNodes && (
           <ProjectPreviewGrid
-            title='Latest projects'
+            title=''
             nodes={projectNodes}
-            browseMoreHref='/projects/'
+            browseMoreHref=''
           />
         )}
       </Container>
