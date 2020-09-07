@@ -27,6 +27,9 @@ function ProjectPreview (props) {
           <BlockText blocks={props._rawExcerpt} />
         </div>
       )}
+      {props.role && (
+        <div className={styles.smallText}>Role: {props.role}</div>
+      )}
     </Link>
   )
 }

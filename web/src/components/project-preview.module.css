@@ -8,6 +8,11 @@
   composes: responsiveTitle1 from './typography.module.css';
 }
 
+.smallText {
+  font-size: 0.8rem;
+  color: grey;
+}
+
 .leadMediaThumb {
   position: relative;
   padding-bottom: 66.666%;

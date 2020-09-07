@@ -10,7 +10,7 @@ import RoleList from './role-list'
 import styles from './project.module.css'
 
 function Project (props) {
-  const {_rawBody, title, categories, mainImage, members, publishedAt, relatedProjects} = props
+  const {_rawBody, title, role, categories, mainImage, members, publishedAt, relatedProjects} = props
   return (
     <article className={styles.root}>
       {props.mainImage && mainImage.asset && (
@@ -30,6 +30,9 @@ function Project (props) {
           <div className={styles.mainContent}>
             <h1 className={styles.title}>{title}</h1>
             {_rawBody && <BlockContent blocks={_rawBody || []} />}
+            {role && (
+              <div className={styles.smallText}>Role: {role}</div>
+            )}
           </div>
           <aside className={styles.metaContent}>
             {publishedAt && (

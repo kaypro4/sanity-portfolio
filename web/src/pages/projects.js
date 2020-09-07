@@ -26,6 +26,7 @@ export const query = graphql`
             alt
           }
           title
+          role
           _rawExcerpt
           slug {
             current
